@@ -11,7 +11,10 @@
 --dark-slate-gray: #374b4aff;
 }
 
+header {
+    background-color: #ffffff;
+}
+
 body {
-    background-color: #8b8baeff;
-    color: red;
+    background-color: #E98300;
 }
