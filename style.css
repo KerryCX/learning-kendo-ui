@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+.colours {
+/* CSS HEX from Coolers.io */
+--celeste: #c5fffdff;
+--middle-blue: #88d9e6ff;
+--cool-grey: #8b8baeff;
+--feldgrau: #526760ff;
+--dark-slate-gray: #374b4aff;
+}
+
+body {
+    background-color: #8b8baeff;
+    color: red;
+}
