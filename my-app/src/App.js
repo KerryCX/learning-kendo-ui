@@ -8,6 +8,10 @@ import { DropdownFilterCell } from "./components/dropdownFilterCell";
 import { Buttony } from './components/Buttony.jsx';
 import { activityData } from "./activityData.jsx";
 import './App.css';
+const initialDataState = {
+  skip: 0,
+  take: 10,
+};
 
 
 const timeframes = Array.from(
@@ -56,10 +60,15 @@ const App = () => {
 
   const [data, setData] = React.useState(activityData);
   const [filter, setFilter] = React.useState();
+  const [page, setPage] = React.useState(initialDataState);
 
   const filterChange = (event) => {
     setData(filterBy(activityData, event.filter));
     setFilter(event.filter);
+  };
+
+  const pageChange = (event) => {
+    setPage(event.page);
   };
 
   return (
@@ -74,10 +83,15 @@ const App = () => {
                 height: "400px",
                 width: "1200px",
             }}
-              data={ data }
+              data={data.slice(page.skip, page.take + page.skip)}
+              skip={page.skip}
+              take={page.take}
               filterable={ true }
               filter={ filter }
               onFilterChange={filterChange}
+              total={data.length}
+              pageable={true}
+              onPageChange={pageChange}
             >
               <Column 
                 field="Activity" 
