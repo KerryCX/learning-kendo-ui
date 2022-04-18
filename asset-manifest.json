@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/learning-kendo-ui/static/css/main.acd64e09.css",
+    "main.js": "/learning-kendo-ui/static/js/main.82c8c73d.js",
+    "static/js/787.28cb0dcd.chunk.js": "/learning-kendo-ui/static/js/787.28cb0dcd.chunk.js",
+    "static/media/fit-image.png": "/learning-kendo-ui/static/media/fit-image.b874439f771629277bc1.png",
+    "index.html": "/learning-kendo-ui/index.html",
+    "main.acd64e09.css.map": "/learning-kendo-ui/static/css/main.acd64e09.css.map",
+    "main.82c8c73d.js.map": "/learning-kendo-ui/static/js/main.82c8c73d.js.map",
+    "787.28cb0dcd.chunk.js.map": "/learning-kendo-ui/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.acd64e09.css",
+    "static/js/main.82c8c73d.js"
+  ]
+}
