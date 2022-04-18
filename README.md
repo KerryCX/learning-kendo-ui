@@ -1,1 +1,1 @@
-# surfs-up
+# learning with Kendo UI
